@@ -1,0 +1,348 @@
+       
+         *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+         }
+         body{
+            background-image:url(https://media.licdn.com/dms/image/C511BAQGvg6B3iz6x4w/company-background_10000/0/1584477887564/jyothi_engineering_college_cheruthuruthy_cover?e=2147483647&v=beta&t=y5V5FZ-2JcJuF7Zt7rh2s0P4iyK-hvUD7dMkRLBo7pI) ;
+            background-repeat: no-repeat;
+      }  
+
+      .navbar{
+            padding: 10px 25px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            color: #fff;
+      }
+      .navbar h1{
+            margin-right: 30px;
+            font-size: 45px;
+            text-shadow: 5px 5px 5px #000;
+      }
+      .Smain{
+            width: fit-content;
+            margin: auto;
+            margin-top: 100px;
+            background-color: rgba(255,255,255,0.3);
+            display: grid;
+            grid-template-columns: auto auto;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.9);
+            overflow: hidden;
+            padding: 20px;
+            gap: 20px;
+      }
+      .Sprofile{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height:100%;
+            padding: 30px;
+            margin: 30px;
+            border-radius: 15px;
+            background-color: rgba(255,255,255,0.8);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.8);
+
+      }
+      .Sprofile:hover{
+            background-color: rgba(0, 0, 0, 0.8);
+            box-shadow: 0 10px 20px rgba(255, 255, 255, 0.8);
+            
+            & a{
+                  color: #fff;
+            }
+
+      }
+      .Sprofile a{
+            text-decoration: none;
+            color: #050505;
+            font-size: 16px;
+            font-weight: 600;
+      }
+      
+
+      /* profile page */
+      .profile-card{
+            background-color: rgba(0,0,0,0.5);
+            margin: auto;
+            width: 70%;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(115, 115, 115, 0.7);
+      }
+
+      .back{
+            border: none;
+            background: transparent;
+      }
+      .back a{
+            text-decoration: none;
+            color: #fff;
+      }
+      .profile-cnt{
+            margin: 70px;
+            margin-bottom: 20px;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+      }
+     
+
+      .image img{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-top: -100px;
+
+      }
+      .profile-cnt .contnt{
+            background-color: #fff;
+            margin: auto;
+            text-align: center;
+            padding: 20px;
+
+      }
+      
+      .profile-form table{
+         text-align: center;
+      }
+
+     
+      .profile-form input{
+            margin: 10px;
+            padding: 5px 10px;
+            
+      }
+
+      .profile-edit{
+            padding: 5px 10px;
+            background-color: #224851;
+            border-radius: 10px;
+            border: none;
+            color: #fff;
+            margin: 5px;
+      }
+      .profile-edit a{
+            text-decoration: none;
+            color: #fff;
+      }
+      .profile-edit:hover{
+            background-color: #378698;
+      }
+
+      .modal {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            z-index: 1000;
+        }
+       
+        /* leave apply form */
+        .leave{
+            border: 2px solid  #0b6bca;;
+            border-radius: 10px;
+            width: 70%;
+            margin: auto;
+            margin-top: 30px;
+            background-color: #ccc;
+            /* text-align: center; */
+          }
+         
+          .leave .h3{
+            display: flex;
+            justify-content: space-between;
+           margin-bottom: 30px;
+           font-weight: 700;
+           padding: 10px 30px;
+           border-radius: 10px 10px 0 0;
+           color: #fff;
+           background-color: #0b6bca;;
+          }
+         
+          .leave-div{
+            margin: 20px;
+          }
+          .leave .leave-div1{
+            display: flex;
+            flex-wrap: wrap;
+      
+          }
+          .leave .reason{
+            text-align: left;
+          }
+         
+          .leave input{
+            margin-bottom: 20px;
+            width: 100%;
+            border-radius: 5px;
+            padding: 5px;
+          }
+          .leave textarea{
+            width: 100%;
+            border-radius: 10px;
+            padding: 20px;
+          }
+          .leave label{
+            margin-right: 20px;
+          }
+          .sub-btn{
+            display: flex;
+            justify-content: center;
+          }
+          .submit{
+            margin-bottom: 30px;
+            padding: 5px 5px;
+            width: 70px;
+            background-color: #0b75df;
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+          }
+      
+    /* attendance */
+    .Attendance-report{
+      background-color: rgba(255,255,255,0.6);
+      width: 70%;
+      margin: auto;
+      padding: 30px;
+ }
+ .Attendance-report .h3{
+   display: flex;
+   justify-content: space-between;
+  font-weight: 700;
+  padding: 10px 30px;
+  border-radius: 10px 10px 0 0;
+  color: #fff;
+  background-color: #0b6bca;;
+ }
+ .h2{
+   background-color: #0b6bca;
+   color: #fff;
+   text-align: center;
+   padding-bottom: 10px;
+ }
+
+ .Attendance-rpt{
+   width: 100%;
+   margin: auto;
+   text-align: center;
+   border: none;
+ }
+
+.Attendance-rpt thead th{
+   background-color: #0b6bca;
+   color: #fff;
+   padding: 10px;
+   font-size: 20px;
+}
+.Attendance-rpt tbody{
+   background-color: #fff;
+}
+.Attendance-rpt{
+     & td,th,tr{
+         border: none;
+     }
+} 
+.bar{
+   padding: 10px;
+}
+.bar div{
+ margin: auto;
+}
+
+ /* progressbar */
+ :root {
+--progress-bar-width: 60px;
+--progress-bar-height: 60px;
+--font-size: 20px;
+}
+ .circular-progress {
+width: var(--progress-bar-width);
+height: var(--progress-bar-height);
+border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.inner-circle {
+position: absolute;
+width: calc(var(--progress-bar-width) - 13px);
+height: calc(var(--progress-bar-height) - 13px);
+border-radius: 50%;
+background-color: lightgrey;
+}
+
+.percentage {
+position: relative;
+font-size: var(--font-size);
+color: rgb(0, 0, 0, 0.8);
+}
+
+@media screen and (max-width: 800px) {
+  
+:root {
+ --progress-bar-width: 50px;
+ --progress-bar-height: 50px;
+ --font-size: 18px;
+}
+}
+
+ 
+@media screen and (max-width:768px)  {
+      .profile-card table tr{
+      display: flex;
+      flex-direction: column;
+      text-align: start;
+     }
+      
+      .profile-card{
+            width: 100%;
+            margin: 0;
+            height: auto;
+      }
+      .profile-cnt{
+            margin: 0;
+            margin-top: 40px;
+            width: 100%;
+      }
+      .profile-cnt input{
+            margin: 5px;
+      }
+      
+  }
+
+
+@media screen and (max-width: 600px) {
+   .Attendance-report{
+         width: 100%;
+         margin: 0;
+         padding: 0;
+        
+   }
+   .Attendance-rpt{
+         &td,thead, th{
+               font-size: 16px;
+               padding: 2px;
+         }
+   }
+:root {
+ --progress-bar-width: 40px;
+ --progress-bar-height: 40px;
+ --font-size: 14px;
+}
+}

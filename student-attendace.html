@@ -1,0 +1,100 @@
+
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Student home</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+      <link rel="stylesheet" href="./static/studentstyle/student-style.css">
+</head>
+<body>
+      <div class="navbar">
+            <h1>FaceTrace</h1>
+            <h4>jyothi engineering college</h4>
+      </div>
+     
+      <div class="studentbasemain">
+          <div class="student-body">
+
+                 <div class="Attendance-report">
+                     <div class="h3">
+                           <h3>Attendance</h3>
+                           <button class="back"><a href="/studenthome"><i class="fa-solid fa-home fa-2x"></i></a></button>
+                     </div>
+                     <!--<h4 class="h2">semester: <span> 1</span></h4>-->
+                    <table class="Attendance-rpt">
+                      <thead>
+                        <tr>
+                        <th>Subject</th>
+                        <th>Attendance</th>
+                        <th>Percentage</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+          {%for j in range(l)%}
+
+                        <tr>
+                              <td>{{v2[j][0]}}</td>
+                              <td>{{v2[j][1]}}/{{v1[j]}}</td>
+                              <td class="bar">
+                                    <div class="circular-progress" data-inner-circle-color="#fff" data-percentage="{{p[j]}}" data-progress-color="blue" data-bg-color="#787879b3">
+                                          <div class="inner-circle"></div>
+                                          <p class="percentage">{{p[j]}}%</p>
+                                    </div>
+
+                              </td>
+                        </tr>
+{%endfor%}
+
+                      </tbody>
+
+                    </table>
+  
+                  </div>
+         </div>
+      </div>
+      <script>
+            // JavaScript to show and hide modal
+            function displayModal() {
+                document.getElementById('passwordChangeModal').style.display = 'block';
+                
+            }
+        
+            function closeModal() {
+                document.getElementById('passwordChangeModal').style.display = 'none';
+                
+            }
+
+
+
+            const circularProgress = document.querySelectorAll(".circular-progress");
+
+Array.from(circularProgress).forEach((progressBar) => {
+  const progressValue = progressBar.querySelector(".percentage");
+  const innerCircle = progressBar.querySelector(".inner-circle");
+  let startValue = 0,
+    endValue = Number(progressBar.getAttribute("data-percentage")),
+    speed = 50,
+    progressColor = progressBar.getAttribute("data-progress-color");
+
+  const progress = setInterval(() => {
+    startValue++;
+    progressValue.textContent = `${startValue}%`;
+    progressValue.style.color = `${progressColor}`;
+
+    innerCircle.style.backgroundColor = `${progressBar.getAttribute(
+      "data-inner-circle-color"
+    )}`;
+
+    progressBar.style.background = `conic-gradient(${progressColor} ${
+      startValue * 3.6
+    }deg,${progressBar.getAttribute("data-bg-color")} 0deg)`;
+    if (startValue === endValue) {
+      clearInterval(progress);
+    }
+  }, speed);
+});
+        </script>
+        
+</body>
+</html>

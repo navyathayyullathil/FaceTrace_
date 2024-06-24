@@ -1,0 +1,194 @@
+/* tutor assign */
+.div2{
+      padding: 50px;
+       background-color: #ffffff;
+       height: 70vh;
+ }
+ .tutorAssign-form {
+       margin: auto;
+       background-color:#0864c1;
+       padding:10px 20px;
+       border-radius: 8px;
+       box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+       width: 450px;
+       text-align: center;
+       color: #e9e3e3;
+     }
+     
+     .tutorAssign-form h2 {
+       color: #ffffff;
+       margin-bottom: 20px;
+     }
+     .tutorAssign-form div{
+       margin-bottom: 20px;
+     }
+     
+     .tutorAssign-form label {
+       margin-bottom: 5px;
+       font-weight: bold;
+     }
+     
+     .tutorAssign-form input {
+       padding: 10px;
+       margin-bottom: 8px;
+     }
+     .tutorAssign-form input:focus{
+       outline: none;
+     }
+     
+     .tutorAssign-button {
+       background-color: #ffffff;
+       color: #0864c1;
+       padding: 10px;
+       width: 30%;
+       border: none;
+       border-radius: 4px;
+       cursor: pointer;
+     }
+     .tutorAssign-button:hover{
+       background-color: #031a30;
+       color: #fff;
+     }
+ 
+     /* staff-assign-table */
+     .assign-table{
+       width: 50%;
+       margin: auto;
+       margin-top: 40px;
+       border-radius: 10px;
+       color: #323131;
+       box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.8)  
+     }
+    
+     .assign-table th,.assign-table td{
+       padding-left: 10px;
+     }
+   /* subject add form */
+   .addSubject-button {
+     background-color: #ffffff;
+     color: #0e55ba;
+     padding: 10px;
+     width: 30%;
+     border: none;
+     border-radius: 4px;
+     cursor: pointer;
+     font-weight: 800;
+   }
+   .addSubject-button:hover{
+     background-color: #031a30;
+     color: #fff;
+   }
+ 
+   .addsub th, .addsub td{
+      background-color: #0864c1;
+   }
+ 
+   /* timetable view */
+   
+.btnadd{
+      position: fixed;
+      bottom: 40px;
+      right: 40px;
+}
+.btnadd a{
+      color: #fff;
+      text-decoration: none;
+}
+.btnadd:hover{
+      background-color: rgb(255, 255, 255);
+      box-shadow: 10px 15px 20px rgba(0,0,0,0.9);
+      border: 2px solid rgb(32, 72, 232);
+}
+.btnadd:hover a{
+      color: rgb(32, 72, 232);
+}
+
+/* profile page */
+.profile-card{
+  background-color: #0e55ba;
+  margin: auto;
+  width: 50%;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(115, 115, 115, 0.7);
+}
+
+
+.profile-cnt{
+  margin: 70px;
+  margin-bottom: 20px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.image img{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: -100px;
+
+}
+.profile-cnt .contnt{
+  background-color: #fff;
+  margin: auto;
+  text-align: center;
+  border-radius: 10px;
+
+}
+
+.profile-form table{
+text-align: center;
+
+}
+
+
+.profile-form input{
+  margin: 10px;
+  padding: 5px 10px;
+  
+}
+
+.profile-edit{
+  padding: 5px 10px;
+  background-color: #224851;
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+  margin: 5px;
+}
+.profile-edit a{
+  text-decoration: none;
+  color: #fff;
+}
+.profile-edit:hover{
+  background-color: #378698;
+}
+
+
+
+@media screen and (max-width:768px)  {
+  .profile-card table tr{
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+ }
+  
+  .profile-card{
+        width: 100%;
+        margin: 0;
+        height: auto;
+  }
+  .profile-cnt{
+        margin: 0;
+        margin-top: 40px;
+        width: 100%;
+  }
+  .profile-cnt input{
+        margin: 5px;
+  }
+  
+}

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cute+Font&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <!--bootstrap cdn-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #e6e2e2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+    }
+
+    .container {
+      max-width: 850px;
+      overflow: hidden;
+      background-color: #fff;
+      box-shadow: 0 15px 20px rgba(0, 0, 0, 0.7);
+      border-radius: 20px;
+    }
+    .container h1{
+      font-family: "Cute Font", sans-serif;
+      font-weight: 700;
+      font-size: 45px;
+      font-style: normal;
+      margin: 10px;
+      text-align: center;
+    }
+
+    .left-side {
+      overflow: hidden;
+      height: 100%;
+    }
+
+    .left-side img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .right-side {
+      padding: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-control{
+        border-radius: 50px;
+    }
+
+.btn{
+    background-color: #033067;
+    width: 150px;
+    margin: auto;
+}
+
+
+  </style>
+</head>
+<body>
+<div class="container">
+  <h1>Face Trace</h1>
+  <div class="row">
+
+    <div class="col-md-6 left-side">
+             <br>
+      <br>
+      <br>
+
+      <br>
+      <br>
+      <br><br>
+
+
+
+
+      <img src="./static/dow.png" alt="Background Image">
+    </div>
+    <div class="col-md-6 right-side p-5">
+        <form class="staff-form" method="post" action="/addstudent" enctype="multipart/form-data" >
+       <br><br>
+        <h3>Student Registration  </h3>
+<br><br><br>
+             <table id="Table" border="0" align="center">
+
+
+<tr><th><label>Name:</label></th><td> <input type="text" id="imd" name="text1" required value=""></td></tr>
+<tr><th><label for="rollNo">Register No:</label></th><td><input type="text" id="rollNo" name="text2" required value=""></td></tr>
+<tr><th><label for="name">Address:</label></th><td><input type="text" id="name" name="text3" required  value=""></td></tr>
+                 <tr><th><label for="rfid">Phone:</label></th><td><input type="number" id="rfid" name="text4" required  value=""></td></tr>
+                 <tr><th><label for="rfid">Email id:</label></th><td><input type="email" id="" name="text5" required   value=""></td></tr>
+
+<tr> <th>    <label for="rfid">Dob:</label>
+</th><td> <input type="date" id="rlfid" name="text6" required  value="">
+</td>
+</tr><tr><th> <label for="rfid">Department:</label>
+
+</th><td>
+<select name="select" id="f">
+              <option disabled selected>--Department--</option>
+
+              <option >CSE</option>
+              <option >EEE</option>
+              <option  >ECE</option>
+                              <option >AD</option>
+              <option >RE</option>
+              <option >MR</option>
+              <option >ME</option>
+
+            </select>
+             </td></tr>
+                 <tr><th> <label for="rfid">Semester:</label>
+</th>
+                 <td>
+                        <select name="select1" id="f">
+              <option disabled selected>--Semester--</option>
+
+              <option >1</option>
+              <option >2</option>
+              <option  >3</option>
+                              <option   >4</option>
+              <option >5</option>
+              <option >6</option>
+              <option >7</option>
+                                          <option >8</option>
+
+
+            </select>
+
+                 </td></tr>
+
+                                  <tr><th>
+                                      <label for="rfid">Division:</label>
+</th>
+                 <td>
+                     <select name="select3">
+                                       <option disabled selected>--Division--</option>
+
+            <option >A</option>
+                                     <option >B</option>
+            <option >C</option>
+
+        </select></td></tr>
+        <tr>
+            <th>
+                         <label for="rfid">Photo:</label>
+
+            </th>
+            <td>        <input type="file" id="ee" name="files" >
+</td>
+        </tr>
+                                  <tr><th><label>Guardian Name:</label></th><td> <input type="text" id="id" name="quardian" required value=""></td></tr>
+
+
+<tr><th><label>Guardian(Phone):</label></th><td> <input type="text" id="idl" name="phone" required value=""></td></tr>
+
+                  <tr><th><label for="Username">Username:</label></th>
+                      <td>                <input type="text" name="uname" required>
+</td>
+                  </tr>
+
+ <tr><th><label for="Password">Password:</label></th>
+            <td> <input type="password" name="password" required></td></tr>
+                 <tr><th>  <label for="Confirm">Confirm Password:</label>
+</th><td>                <input type="password" name="cnfpassword" required>
+</td></tr>
+
+                 <tr>  <td colspan="2" align="center">     <button type="submit" class="button">Register</button></td>
+ </tr>
+             </table>
+    </form>
+
+      
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>

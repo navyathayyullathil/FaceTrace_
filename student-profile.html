@@ -1,0 +1,105 @@
+
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Student home</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+      <link rel="stylesheet" href="./static/studentstyle/student-style.css">
+</head>
+<body>
+      <div class="navbar">
+            <h1>FaceTrace</h1>
+            <h4>jyothi engineering college</h4>
+      </div>
+     
+      <div class="studentbasemain">
+         <div class="student-body">
+             <div class="profile-card">
+
+                  <button class="back"><a href="/studenthome"><i class="fa-solid fa-home fa-2x"></i></a></button>
+                  <div class="profile-cnt">
+                        <div class="contnt">
+                                                 <form action="/studentupdate" enctype="multipart/form-data" class="profile-form" method="post">
+
+
+                              <div class="image">
+                                    <img src="./static/studentphoto/{{i[11]}}" alt="">
+
+                              </div>
+                                    <table>
+                                          <!--<div id="passwordChangeModal" class="modal">-->
+                                                <!--<h2>Password Change</h2>-->
+                                                <!--&lt;!&ndash; Your password change form or content goes here &ndash;&gt;-->
+
+                                                    <!--&lt;!&ndash; Your form fields go here &ndash;&gt;-->
+                                                    <!--<label for="newPassword">New Password:</label>-->
+                                                    <!--<input type="password" id="newPassword" name="newPassword" required>-->
+                                                    <!--<br>-->
+                                                    <!--<label for="confirmPassword">Confirm Password:</label>-->
+                                                    <!--<input type="password" id="confirmPassword" name="confirmPassword" required>-->
+                                                    <!--<br>-->
+                                                    <!--<input type="submit" value="Change Password">-->
+
+                                                <!--<button onclick="closeModal()">Close</button>-->
+                                            <!--</div>-->
+
+                                          <tr>
+                                                <td><label for="">Register No:</label></td>
+                                                <td><input type="text" value="{{i[3]}}"  name="text2"></td>
+                                          </tr>
+
+                                          <tr>
+                                                <td><label for="">Name:</label></td>
+                                                <td><input type="text" value="{{i[2]}}" name="text1"></td>
+                                          </tr>
+                                           <tr>
+                                                <td><label for="">Dob:</label></td>
+                                                <td><input type="date" value="{{i[7]}}" name="text6"></td>
+                                          </tr>
+                                          <tr>
+                                                <td><label for="">Department:</label></td>
+                                                <td><input type="text" value="{{i[8]}}" readonly></td>
+                                          </tr>
+                                          <tr>
+                                                <td><label for="">Semester:</label></td>
+                                                <td><input type="text" value="{{i[9]}}" readonly></td>
+                                                
+                                          </tr>
+                                          <tr>
+                                                <td><label for="">Address</label></td>
+                                                <td><input type="text" value="{{i[4]}}" name="text3"></td>
+                                          </tr>
+                                          <tr>
+                                                <td><label for="">email:</label></td>
+                                                <td><input type="email" value="{{i[6]}}" name="text5"></td>
+                                          </tr>
+                                          <tr>
+                                                <td><label for="">mobile</label></td>
+                                                <td><input type="number" value="{{i[5]}}" length="10"name="text4"></td>
+                                          </tr>
+                                    </table>
+                                  <button class="profile-edit" type="submit">Edit profile</button>
+
+                              </form>
+                        </div>
+                  </div>
+             </div>
+         </div>
+         
+      </div>
+      <script>
+            // JavaScript to show and hide modal
+            function displayModal() {
+                document.getElementById('passwordChangeModal').style.display = 'block';
+                
+            }
+        
+            function closeModal() {
+                document.getElementById('passwordChangeModal').style.display = 'none';
+                
+            }
+        </script>
+        
+</body>
+</html>

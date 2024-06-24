@@ -1,0 +1,64 @@
+
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Student home</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+      <link rel="stylesheet" href="./static/studentstyle/student-style.css">
+</head>
+<body>
+      <div class="navbar">
+            <h1>FaceTrace</h1>
+            <h4>jyothi engineering college</h4>
+      </div>
+     
+      <div class="studentbasemain">
+          <div class="student-body">
+
+                 <div class="leave">
+                     <div class="h3">
+                           <h3>Leave Request Form</h3>
+                                                <button class="back"><a href="/leavereq"><i class="fa-solid fa-school-circle-xmark fa-2x"></i></a></button>
+                           <button class="back"><a href="studenthome"><i class="fa-solid fa-home fa-2x"></i></a></button>
+
+                     </div>
+                     <form action="/leavereqsupdate" class="leave" style="margin-bottom: 10px;" method="post">
+                            <div class="leave-div">
+                                  <div class="leave-div1">
+                                      <!--<input type="text"value="id " hidden>-->
+                                      <!--<input type="text" value=" name " hidden>-->
+                                      <label for="date">Date: 
+                                           <input type="date" name="date" id="" value="{{i[5]}}">
+                                      </label>
+                                      <label for="days">Days: 
+                                           <input type="number" name="day" id=""  value="{{i[4]}}">
+                                      </label><br>
+                                 </div>
+                                 <Label class="reason">Reason:<br>
+                                      <div class="leave-div1">
+                                          <textarea name="text" id="" cols="50" rows="5" >{{i[3]}}</textarea><br>
+                                      </div> 
+                                 </Label>
+                           </div>
+                           <div class="sub-btn"><button type="submit" class="submit">Edit</button></div>
+                     </form>
+  
+                  </div>
+         </div>
+      </div>
+      <script>
+            // JavaScript to show and hide modal
+            function displayModal() {
+                document.getElementById('passwordChangeModal').style.display = 'block';
+                
+            }
+        
+            function closeModal() {
+                document.getElementById('passwordChangeModal').style.display = 'none';
+                
+            }
+        </script>
+        
+</body>
+</html>
